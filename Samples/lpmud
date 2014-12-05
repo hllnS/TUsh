@@ -1,0 +1,45 @@
+# 
+#  An example of a generic execute file that can be used
+#  on its own, or pulled in from another execute file
+#
+
+# show whats happening
+echo Running LP file
+
+# perhaps setup semi auto login for several charaters
+alias "mychar1" mychar1%nmypassword1%e
+alias "mychar2" mychar2%nmypassword2%e
+
+
+# do a trigger to ignore the standard prompt
+# this stops it uselessly floating up the screen
+trigger "> " %c%p#
+
+# set the prompt to same as the mud
+set prompt >
+
+# an alias to allow execution of TUsh commands whilst not in
+# command mode
+ 
+alias com %c%1
+
+# zippy alias to upload files to the mud
+
+alias ul %ocd%ned %1%n1,$d%na%ncom <%1%n.%nx%n
+
+# basic mudding aliases
+
+alias x 	examine %1
+alias bc        buy coffee %1
+alias bf        buy fire %1
+alias ga        get all %1
+alias gfc       get all from corpse %1
+alias gfb       get all from bag %1
+alias bs        buy special %1
+alias bb        buy beer %1 
+alias db        drink beer %1
+alias ds        drink special %1
+alias df	drink firebreather %1
+alias sb        sell bottle %1
+
+

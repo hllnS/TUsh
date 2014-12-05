@@ -1,0 +1,49 @@
+/************************************************************************
+ *                                                                      *
+ *      TUsh - The Telnet User's Shell   	Simon Marsh	        *
+ *                                                                      *
+ ************************************************************************/
+
+	Installing TUsh could not be easier. 
+
+1) Edit the file 'Makefile'
+
+	Change DEST to the directory you want TUsh to be installed in.
+	It's wise to make this the full pathname of the destination
+	directory, but simply putting . will suffice.
+
+	If your system doesn't have gcc (most do) change the CC = gcc
+	to read CC = cc.
+
+	If want any fancy compiler flags change the CFLAGS variable,
+	otherwise leave it as it is.
+
+2) Edit the file 'config.h'
+
+	You shouldn't really need to change anything in here. Though
+	you can change it to suit your own tastes if you desire.
+
+3) type 'make install'
+
+	If all goes well, you will be left with an executable in the
+	DEST directory, named the same as PROGRAM.
+
+	If you have problems with the 'check_malloc' function, or your
+	compiler can't find 'mallopt'. Then re-edit the Makefile, to
+	include the bit indicated.
+
+	If you are using gcc with SunOS and get ioctl errors when
+	running the program. Edit the Makefile so as to use cc.
+
+4) read the doc on how to use it (tush.doc), take a look at the sample
+   files in the directory 'Samples' and away you go.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ INET: S.J.Marsh@csv.warwick.ac.uk +----------------------------------- +
++ -------- smarsh@loligo.cc.fsu.edu + JANET:S.J.Marsh@uk.ac.warwick      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+

@@ -1,0 +1,34 @@
+#
+# An example execute file
+#
+
+
+# show whats happening
+echo Running Genocide File ....
+
+# pull in another execute file
+# just like #include in C
+
+execute lpmud
+
+# set up site specific aliases and triggers
+
+# follow someone
+
+alias follow %c trigger "%v%1 leaves *." {%1}
+alias stop %c untrigger "%v%1 leaves *."
+
+# highlight exits
+
+trigger "*There are * obvious exits:*" %c%philight Exits:%3
+
+# and when people enter and leave
+
+trigger "* arrives*" %c%philight %1 arrives%2
+trigger "* enters*" %c%philight %1 enters%2
+trigger "* leaves*" %c%philight %1 leaves%2
+
+# auto login
+
+send mycharacter
+send mypassword

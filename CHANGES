@@ -1,0 +1,53 @@
+
+Changes from V1.71 to V1.72 as from 13/1/93
+
+Changed prompt updates. TUsh now only redraws the prompt when nothing
+is pending on the socket input, instead of at every line end. This
+means faster scrolling to equal that of straight telnet or other
+frontends. 
+
+New command 'set wildcard' allowing change of alias and trigger
+wildcard.
+
+New command 'malloc' mainly for my own debugging and amusement B-)
+
+Added %b and %x escapes.
+
+
+Changes from v1.72 to v1.73 as from 27/1/93
+
+Added command 'set alias' to turn off alias processor
+Added command 'set trigger' to turn off trigger processor
+Added command 'auto kill' to kill shells on connection close
+
+Added 'set ga' command, and Go Ahead signal support. TUsh now
+recognises if a prompt has been sent, and sets its own prompt
+accordingly.
+
+Increased resistance to bad termcaps.
+
+Added 'titlebar' command for Xterm users.
+
+Changes from v1.73 to 1.74 as from 20/2/93
+
+Provided support for IAC EOR as well as IAC GA (they both do the same
+thing ...) IAC EOR will always overide IAC GA if its available.
+
+Changed the 'set ga' command to the more general 'set prompt mode'
+command, and increased the help on the whole prompt business.
+
+Changed IAC handling again, so that it works properly. 
+
+Better portability
+
+No longer echos password when doing local echoing.
+
+
+Simon Marsh
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ INET: S.J.Marsh@csv.warwick.ac.uk +----------------------------------- +
++ -------- smarsh@loligo.cc.fsu.edu + JANET:S.J.Marsh@uk.ac.warwick      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+

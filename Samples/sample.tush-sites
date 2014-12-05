@@ -1,0 +1,14 @@
+# 
+#  This is a sample .tush-sites file
+#  Remember the .tush-sites file should be in your home directory
+#
+
+# [NAME]	[HOST ADDRESS]		[PORT]  [FILE TO EXECUTE]
+
+Foothills	128.186.2.99		2010	talker
+EW		paddington.city.ac.uk	2010	talker
+Durham		capella.dur.ac.uk	3000	lpmud
+Nanvaent	130.159.220.8		3000	lpmud
+Genocide	192.92.115.10		2222	genocide
+
+

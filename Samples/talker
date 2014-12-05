@@ -1,0 +1,26 @@
+#
+#  This is a sample 'execute' file
+#  Its set up so it is called via the .tush-sites file when a talker
+#  is connected to.
+#
+
+# Show whats happening
+echo Running talker file
+
+# set up the prompt
+set prompt Burble ->
+
+# set up aliases and triggers n things
+alias hi say Hi there %1 !
+alias "*smile * *" %1emote %3 smiles happily at %2
+
+# ... etc
+
+# auto login
+
+send mycharactername
+send mypassword
+
+# and be really sad
+
+send shout Hi Everyone !

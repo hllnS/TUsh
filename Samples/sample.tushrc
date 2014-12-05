@@ -1,0 +1,41 @@
+#
+# This is a sample .tushrc file to give you some idea of what can be
+# done. Configure to your taste, and then place in your home directory
+# with the filename .tushrc
+#
+
+# this is just to say that something is happening
+
+echo Running .tushrc
+
+# You might want to cd to a directory where all the tush files are
+# kept so that everything can be put nice and neatly in one directory
+
+cd /home/lily2/ma/usf/TUsh-Stuff
+
+# maybe customise buffers to suit personal taste
+# this sets up nice big screen and key histories.
+
+set kh 5000
+set sh 10000
+
+# you may not like the syntax for certain commands, easy just make an 
+# alias to change it.
+# this alias changes the syntax of the trigger commands
+
+alias "trig *|*" %ctrigger "%1" %2
+alias "untrig *" %cuntrigger "%1"
+
+# Perhaps add some new general commands
+# for instance, this adds a new command 'said <arg>'
+# that will remind you of what someone has just said.
+
+alias said %c match "%v%1 says *" echo %v%1 said {%1%c}
+
+# set up any general triggers ..
+# this one highlights any tell messages to you.
+
+trigger "* tells you *" %c%p hilight %1 tells you %2
+
+
+

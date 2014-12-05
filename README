@@ -1,0 +1,38 @@
+/************************************************************************
+ *                                                                      *
+ *      TUsh - The Telnet User's Shell          Simon Marsh 1992        *
+ *                                                                      *
+ ************************************************************************/
+
+
+TUsh is a front end for telnet protocol connections. Features on offer
+are (among many more) powerful macro processing, virtual screen
+display, site list and multiple connections.
+
+The original TUsh source was programmed entirely by Simon Marsh. The
+program comes as is, without any liability or guarantees. Though I
+retain copyright of the source code, you may freely distribute it
+throughout the entire known universe. 
+If you make any alterations to the source, and subsequently distribute
+the result, leave clear headers explaining who has altered what, and
+when. 
+
+To install TUsh, read the documention in the INSTALL file.
+
+Instructions on how to use TUsh are contained within the tush.doc
+file.
+
+Feel free to mail any suggestions/bugs to me, though I make no
+guarantees about future coding.
+
+
+
+Have fun ..
+
+
+Simon Marsh
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ INET: S.J.Marsh@csv.warwick.ac.uk +----------------------------------- +
++ -------- smarsh@loligo.cc.fsu.edu + JANET:S.J.Marsh@uk.ac.warwick      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
